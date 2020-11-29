@@ -1,6 +1,6 @@
 import { createStackNavigator } from 'react-navigation-stack';
 
-import { ProfilePage } from '../pages/ProfilePage';
+import ProfilePage from '../pages/ProfilePage';
 import StartPage from '../pages/StartPage';
 
 const screens = {
