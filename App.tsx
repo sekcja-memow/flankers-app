@@ -1,14 +1,9 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Navigator from './routes/drawer'
+import { StyleSheet } from 'react-native';
+import Navigator from './routes/drawer';
 
 const App: React.FC = () => {
-  return (
-      <Navigator />
-
-
-  );
+  return <Navigator />;
 };
 
 const styles = StyleSheet.create({

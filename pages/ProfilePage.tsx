@@ -1,12 +1,26 @@
-import React, {useState} from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import React from 'react';
+import { Text, View } from 'react-native';
 
-export default function ProfilePage () {
-    return (
-        <View>
-            <Text> Profile Page</Text>
-        </View>
-    );
+interface Match {
+  header: string;
+  comment: string;
+  date: Date;
 }
 
+interface ProfilePageProps {
+  name: string;
+  rankingPoints: number;
+  matchHistory: Match[];
+}
 
+export const ProfilePage: React.FC<ProfilePageProps> = ({
+  name,
+  rankingPoints,
+  matchHistory,
+}) => {
+  return (
+    <View>
+      <Text> Profile Page</Text>
+    </View>
+  );
+};
