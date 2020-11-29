@@ -1,15 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Navigator from './routes/drawer'
 
-export default function App() {
+const App: React.FC = () => {
   return (
       <Navigator />
 
 
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -19,3 +19,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
