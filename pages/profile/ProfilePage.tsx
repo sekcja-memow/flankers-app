@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button, StyleSheet } from 'react-native';
-import Bar from '../components/Bar';
-import theme from '../theme';
-import TextField from '../components/TextField';
+import Bar from '../../components/Bar';
+import theme from '../../theme';
+import TextField from '../../components/TextField';
 
 export default function ProfilePage({ navigation }: { navigation: any }) {
   const onEdit = () => {
-    navigation.push('StartPage');
+    navigation.push('EditProfilePage');
   };
 
   const onLogout = () => {

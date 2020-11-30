@@ -2,16 +2,26 @@ import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 export default function StartPage({ navigation }: { navigation: any }) {
-  const pressHandler = () => {
-    navigation.push('ProfilePage');
-  };
-
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>Flankers</Text>
       </View>
-      <Button title="Profile" onPress={pressHandler} />
+      <Button title="Profil" onPress={() => navigation.push('ProfilePage')} />
+      <Button
+        title="Zespół"
+        onPress={() => navigation.navigate('ViewTeamPage')}
+      />
+      <Button title="Portfel" onPress={() => navigation.push('WalletPage')} />
+      <Button
+        title="Utwórz mecz"
+        onPress={() => navigation.push('CreateMatchPage')}
+      />
+      <Button
+        title="Dołącz do meczu"
+        onPress={() => navigation.push('MatchJoinFromMapPage')}
+      />
+      <Button title="Ranking" onPress={() => navigation.push('RankingPage')} />
     </View>
   );
 }
