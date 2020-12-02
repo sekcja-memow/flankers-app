@@ -15,11 +15,6 @@ const theme = {
     medium: 16,
     large: 30,
   },
-  // fontWeight: {
-  //   regular: 400,
-  //   semiBold: 500,
-  //   bold: 700,
-  // },
 };
 
 export default theme;

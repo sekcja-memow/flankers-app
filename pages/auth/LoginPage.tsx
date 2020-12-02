@@ -1,7 +1,11 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-export default function LoginPage({ navigation }: { navigation: any }) {
+interface LoginPageProps {
+  navigation: any;
+}
+
+const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
   const onEdit = () => {
     navigation.push('StartPage');
   };
@@ -11,4 +15,6 @@ export default function LoginPage({ navigation }: { navigation: any }) {
       <Text>Login Page</Text>
     </>
   );
-}
+};
+
+export default LoginPage;

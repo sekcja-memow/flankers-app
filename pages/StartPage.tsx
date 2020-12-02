@@ -1,3 +1,12 @@
+/*
+ *
+ *
+ *
+ *
+ * Strona zostanie wykorzystana do ekranu startowego aplikacji przed zalogowaniem
+ *
+ */
+
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
