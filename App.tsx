@@ -1,10 +1,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import Tabs from './routes/Tabs';
-
-const Tab = createMaterialBottomTabNavigator();
 
 const App: React.FC = () => {
   return (
