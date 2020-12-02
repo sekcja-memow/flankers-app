@@ -2,11 +2,8 @@ import React from 'react';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import CreateMatchPage from '../pages/match/CreateMatchPage';
-import ProfilePage from '../pages/profile/ProfilePage';
 import WalletPage from '../pages/wallet/WalletPage';
 import theme from '../theme';
-import ViewTeamPage from '../pages/teams/ViewTeamPage';
-import MatchJoinFromMapPage from '../pages/match/MatchJoinFromMapPage';
 import RankingPage from '../pages/ranking/RankingPage';
 import {
   MatchStackScreen,

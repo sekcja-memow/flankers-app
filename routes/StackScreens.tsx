@@ -9,11 +9,12 @@ import ViewTeamPage from '../pages/teams/ViewTeamPage';
 import CreateTeamPage from '../pages/teams/CreateTeamPage';
 import ProfilePage from '../pages/profile/ProfilePage';
 import EditProfilePage from '../pages/profile/EditProfilePage';
+import theme from '../theme';
 
 const MatchStack = createStackNavigator();
 export const MatchStackScreen: React.FC = () => {
   return (
-    <MatchStack.Navigator>
+    <MatchStack.Navigator screenOptions={theme.headerOptions}>
       <MatchStack.Screen name="CreateMatchPage" component={CreateMatchPage} />
       <MatchStack.Screen
         name="MatchJoinFromMap"
@@ -35,7 +36,7 @@ export const MatchStackScreen: React.FC = () => {
 const TeamsStack = createStackNavigator();
 export const TeamsStackScreen: React.FC = () => {
   return (
-    <TeamsStack.Navigator>
+    <TeamsStack.Navigator screenOptions={theme.headerOptions}>
       <TeamsStack.Screen name="ViewTeamPage" component={ViewTeamPage} />
       <TeamsStack.Screen name="CreateTeamPage" component={CreateTeamPage} />
     </TeamsStack.Navigator>
@@ -45,7 +46,7 @@ export const TeamsStackScreen: React.FC = () => {
 const ProfileStack = createStackNavigator();
 export const ProfileStackScreen: React.FC = () => {
   return (
-    <ProfileStack.Navigator>
+    <ProfileStack.Navigator screenOptions={theme.headerOptions}>
       <ProfileStack.Screen name="ProfilePage" component={ProfilePage} />
       <ProfileStack.Screen name="EditProfilePage" component={EditProfilePage} />
     </ProfileStack.Navigator>

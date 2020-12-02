@@ -1,18 +1,14 @@
 import React from 'react';
-import { Button, Text } from 'react-native';
+import { Button, Text, View } from 'react-native';
 
 export default function ViewTeamPage({ navigation }: { navigation: any }) {
-  const onEdit = () => {
-    navigation.push('StartPage');
-  };
-
   return (
-    <>
+    <View>
       <Text>View Team</Text>
       <Button
         title="Utwórz zespół"
         onPress={() => navigation.push('CreateTeamPage')}
       />
-    </>
+    </View>
   );
 }

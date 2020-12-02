@@ -15,6 +15,15 @@ const theme = {
     medium: 16,
     large: 30,
   },
+  headerOptions: {
+    title: '',
+    headerStyle: {
+      backgroundColor: '#F4B740',
+      height: 55,
+      elevation: 0,
+    },
+    headerTintColor: '#FFFFFF',
+  },
 };
 
 export default theme;
