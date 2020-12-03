@@ -13,7 +13,7 @@
     }
   },
   "lint-staged": {
-    "*.{.js,jsx,ts,tsx}": "eslint"
+    "*.{.js,jsx,ts,tsx}": "eslint --fix"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
