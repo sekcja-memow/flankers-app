@@ -1,14 +1,17 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet } from 'react-native';
+import { Provider as PaperProvider } from 'react-native-paper';
 
 import { BottomTabNavigation } from './src/components/BottomTabNavigation';
 
 const App: React.FC = () => {
   return (
-    <NavigationContainer>
-      <BottomTabNavigation />
-    </NavigationContainer>
+    <PaperProvider>
+      <NavigationContainer>
+        <BottomTabNavigation />
+      </NavigationContainer>
+    </PaperProvider>
   );
 };
 

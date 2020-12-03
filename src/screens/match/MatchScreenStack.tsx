@@ -1,7 +1,7 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 
-import theme from '../../theme';
+import { theme } from '../../theme';
 import { MatchCreateScreen } from './MatchCreateScreen';
 import { MatchInLobbyScreen } from './MatchInLobbyScreen';
 import { MatchInProgressScreen } from './MatchInProgressScreen';

@@ -1,6 +1,7 @@
 import { StackNavigationProp, StackScreenProps } from '@react-navigation/stack';
 import React from 'react';
-import { Button, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import { Button } from 'react-native-paper';
 
 import { MatchScreenStackParamList } from './MatchScreenStack';
 
@@ -13,10 +14,9 @@ export const MatchCreateScreen: React.FC<MatchCreateScreenProps> = ({
   return (
     <View>
       <Text>Create Match Screen</Text>
-      <Button
-        title="Wybierz miejsce na mapie"
-        onPress={() => navigation.push('MatchLocation')}
-      />
+      <Button onPress={() => navigation.push('MatchLocation')}>
+        Wybierz miejsce na mapie
+      </Button>
     </View>
   );
 };

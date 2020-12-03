@@ -3,7 +3,7 @@ import React from 'react';
 import { Button, StyleSheet, Text } from 'react-native';
 
 import { HeaderWithAvatar } from '../../components/shared/HeaderWithAvatar';
-import theme from '../../theme';
+import { theme } from '../../theme';
 import { ProfileScreenStackParamList } from './ProfileScreenStack';
 
 type ProfileScreenProps = object &

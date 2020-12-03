@@ -1,4 +1,7 @@
-const theme = {
+import { DefaultTheme as PaperDefaultTheme } from 'react-native-paper';
+
+export const theme = {
+  ...PaperDefaultTheme,
   colors: {
     primary: '#F4B740',
     secondary: '#FFD789',
@@ -8,12 +11,6 @@ const theme = {
       white: '#FFFFFF',
     },
     black: '#000',
-  },
-  font: {
-    small: 10,
-    regular: 14,
-    medium: 16,
-    large: 30,
   },
   headerOptions: {
     title: '',
@@ -25,5 +22,3 @@ const theme = {
     headerTintColor: '#FFFFFF',
   },
 };
-
-export default theme;

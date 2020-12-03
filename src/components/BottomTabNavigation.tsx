@@ -17,7 +17,7 @@ import {
   TeamScreenStackParamList,
 } from '../screens/teams/TeamScreenStack';
 import { WalletScreen } from '../screens/wallet/WalletScreen';
-import theme from '../theme';
+import { theme } from '../theme';
 
 export type BottomTabNavigationParamList = {
   Match: NavigatorScreenParams<MatchScreenStackParamList>;
